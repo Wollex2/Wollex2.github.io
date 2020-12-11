@@ -1,0 +1,356 @@
+<!Doctype html>
+
+<html>
+
+  <head>
+	<!--Jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("button").click(function(){
+			$(".aboutusShowmore").text("We are passionate developers and creators of Dota 2.As the universe of Dota 2 grows, we want to give something back to the community and give you opportunity to purchase clothes with your favorite heroes, their favorite figurines and more!");
+		  });
+		});
+	</script>
+
+	
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Font Awesome kit-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Required meta tags-->
+    <title> Dota 2 store </title>
+    <link rel="icon" href="images/dota-2-icon.png" type="image/ico" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Cute Dota 2 merch" />
+    <meta name="description" content="All about Dota 2 merch, info, pictures, prices.  "  />
+    <meta name="author" content="Bogdan Nisic"  />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+
+
+
+
+
+
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!--Navigation-->
+      <div id="navigation">
+          <div id="logo" >
+            <a href="index.html"> <img src="images/dota_logo_cut.jpg" alt="Main logo" class="img-responsive" /> </a>
+          </div>
+          <div id="menu">
+            <ul>
+              <li> <a href="index.html">Home </a> </li>
+              <li class="dropdown-store">
+                 <a href="index.html" class="storebtn">
+                   Store
+                   <i class="fas fa-caret-down"></i>
+                 </a>
+                 <div class="dropdown-storePages">
+                   <a href="apparel.html">Apparel</a>
+                   <a href="vynils+collectibles.html">Vynils+Collectibles</a>
+                   <a href="home+office.html">Home+Office</a>
+                 </div>
+
+              </li>
+              <li> <a href="#aboutUs">About us </a> </li>
+              <li> <a href="#contact">Contact </a> </li>
+              <li> <a href="author.html">Author </a> </li>
+            </ul>
+          </div>
+      </div>
+
+      <!--Main Banner-->
+      <div id="mainBanner">
+        <div>
+          <img src="images/mainbanner_2.jpg" class="mySlides" alt="Dota 2 Main Banner 1, Dota 2 Kins Collection "/>
+          <img src="images/mainbanner_3.jpg" class="mySlides" alt="Dota 2 Main Banner 2, Dota 2 Blind Bag Squishies"/>
+          <img src="images/mainbanner_4.jpg" class="mySlides" alt="Dota 2 Main Banner 3, International 2019 Aegis"/>
+        </div>
+
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 6000); // Change image every 6 seconds
+          }
+        </script>
+      </div>
+
+      <!--Main page products-->
+      <div id="products">
+
+        <div id="newestArrivals" class="position products">
+          <h1>Newest Arrivals </h1>
+          <div class="productrows">
+              <div class="productimages descriptionPosition">
+                <img src="images/newest_arrival_1.png" alt="Black hoodie with dota 2 heroes" />
+                <div class="img_description_layout">
+                  <p class="img_description">Chubbies Pullover Hoodie</p>
+                  <p class="img_price">Price: 50$</p>
+                </div>
+              </div>
+              <div class="productimages descriptionPosition">
+                <img src="images/newest_arrival_2.png" alt="Dota 2 zip hoodie"  />
+                <div class="img_description_layout">
+                  <p class="img_description">Tech Zip Hoodie</p>
+                  <p class="img_price">Price: 50$</p>
+                </div>
+              </div>
+              <div class="productimages descriptionPosition">
+                <img src="images/newest_arrival_3.png"  alt="Black hoodie with Chubby Legion"/>
+                <div class="img_description_layout">
+                  <p class="img_description">LChibi Pullover Hoodie</p>
+                  <p class="img_price">Price: 50$</p>
+                </div>
+              </div>
+              <div class="productimages descriptionPosition">
+                <img src="images/newest_arrival_4.png" alt="Pink shirt with Chubby Spectre" />
+                <div class="img_description_layout">
+                  <p class="img_description">Specter Chibi</p>
+                  <p class="img_price">Price: 25$</p>
+                </div>
+              </div>
+              <div class="cleaner">
+
+              </div>
+          </div>
+        </div>
+
+        <div id="bestSellers" class="position products">
+          <h1>Best Sellers </h1>
+          <div class="productrows">
+            <div class="productimages descriptionPosition">
+              <img src="images/best_sellers_1.png" alt="Dota 2 Sven Coffee Mug" />
+              <div class="img_description_layout">
+                <p class="img_description">Sven Mug</p>
+                <p class="img_price">Price: 25$</p>
+              </div>
+            </div>
+            <div class="productimages descriptionPosition">
+              <img src="images/best_sellers_2.png" alt="Dota 2 mouse pad" />
+              <div class="img_description_layout">
+                <p class="img_description">Calm Before the Horn</p>
+                <p class="img_price">Price: 20$</p>
+              </div>
+            </div>
+            <div class="productimages descriptionPosition">
+              <img src="images/best_sellers_3.png"  alt="Blind Bag squishies, dota 2 toys"/>
+              <div class="img_description_layout">
+                <p class="img_description">Blind Bag Squishes</p>
+                <p class="img_price">Price: 15$</p>
+              </div>
+            </div>
+            <div class="productimages descriptionPosition">
+              <img src="images/best_sellers_5.png"  alt="Dota 2 knitted beanie"/>
+              <div class="img_description_layout">
+                <p class="img_description">Rubber Band Beanie</p>
+                <p class="img_price">Price: 20$</p>
+              </div>
+            </div>
+            <div class="cleaner">
+
+            </div>
+          </div>
+        </div>
+
+        <div id="sale" class="position products">
+          <h1>Sale </h1>
+          <div class="productrows">
+            <div class="productimages descriptionPosition">
+              <img src="images/sale_1.jpg" alt="Dota 2 Nendoroid Dragon Knight Figure"/>
+              <div class="img_description_layout">
+                <p class="img_description">Nendoroid Dragon Knight</p>
+                <p class="img_price">Price: <span class="strikethrough">45$</span> <span class="discountPrice">22$</span></p>
+
+              </div>
+            </div>
+            <div class="productimages descriptionPosition">
+              <img src="images/sale_2.jpg" alt="Dota 2 Nendoroid Mirana Figure"/>
+              <div class="img_description_layout">
+                <p class="img_description">Nendoroid Mirana</p>
+                <p class="img_price">Price: <span class="strikethrough">45$</span> <span class="discountPrice">22$</span></p>
+              </div>
+            </div>
+            <div class="productimages descriptionPosition">
+              <img src="images/sale_3.jpg" alt="Dota 2 Nendoroid Queen of Pain Figure"/>
+              <div class="img_description_layout">
+                <p class="img_description">Nendoroid Queen of Pain</p>
+                <p class="img_price">Price: <span class="strikethrough">46$</span> <span class="discountPrice">23$</span></p>
+              </div>
+            </div>
+            <div class="productimages descriptionPosition">
+              <img src="images/sale_4.jpg" alt="Dota 2 figma Wind Ranger Figure" />
+              <div class="img_description_layout">
+                <p class="img_description">figma Wind Ranger</p>
+                <p class="img_price">Price: <span class="strikethrough">60$</span> <span class="discountPrice">35$</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="cleaner">
+
+          </div>
+        </div>
+
+      </div>
+      <!--About Us-->
+      <div id="aboutUs">
+        <div class="position">
+          <div class="parallax" role="img" aria-label="About Us Parallax Image">
+
+          </div>
+          <div class="aboutusText">
+            <h1>About Us</h1>
+            <p class="aboutusShowmore">
+              We are passionate developers and creators of Dota 2. <button>Show more</button>
+			  
+            </p>
+          </div>
+
+          <div class="cleaner">
+
+          </div>
+
+        </div>
+      </div>
+
+
+<!--Contact Form -->
+      <div id="contact">
+        <div class="position">
+
+          <h1>Contact Us</h1>
+          <div class="contactForm">
+            <form id="form" action="/action_page.php">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" placeholder="John" pattern="[a-zA-Z]+" class="form-control" data-field="firstname">
+				<div class="valid-message"></div>
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Cena" pattern="[a-zA-Z]+" class="form-control"data-field="lastname">
+				<div class="valid-message"></div>
+              <label for="Email">Email</label>
+              <input type="email" id="email" name="email" placeholder="johncena@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
+			  <script>
+				function myFunction() {
+				var x = document.getElementById("email").pattern;
+				document.getElementById("demo").innerHTML = x;
+				}
+			  </script>
+
+				
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write us something"></textarea>
+
+              <input onclick="myFunction()" type="submit" value="Submit"/> 
+			  
+
+			  
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div class="position">
+          <div id="footerNav" class="footerPosition">
+            <h2>
+              Navigate
+            </h2>
+            <div id="footerNavbuttons">
+              <ul>
+                <li> <a href="index.html">Home </a> </li>
+                <li> <a href="#menu">Store </a> </li>
+                <li> <a href="index.html#aboutUs">About us </a> </li>
+                <li> <a href="index.html#contact">Contact </a> </li>
+                <li> <a href="author.html">Author </a> </li>
+              </ul>
+            </div>
+          </div>
+		  <div id="footerConnect" class="footerPosition">
+			<h2> Connect </h2>
+			<div id="footerConnectIcons" >
+				<div id="instagramIcon">
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+				</div>
+				
+				<div id="facebookIcon">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+				</div>
+				
+				<div id="youtubeIcon">
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+				</div>
+				
+				<div id="rssIcon">
+					<a href="http://feeds.bbci.co.uk/news/world/rss.xml"><i class="fas fa-rss-square"></i></a>
+				</div>
+			</div>
+		  
+		  </div>
+		  <div id="footerAboutUs" class="footerPosition">
+			<img src="images/footer_logo_1.png"/>
+			<p>We are passionate developers and creators of Dota 2. <span>As the universe of Dota 2 grows,we want to give something back to the community and give you opportunity to purchase clotheswith your favorite heroes, their favorite figurines and more!</span></p>
+		  </div>
+		  <div id="footerContact" class="footerPosition">
+		  <h2>Kontakt</h2>
+			<div class="footerInfo">
+				<div class="footerIcon">
+					<i class="fas fa-home"></i>
+				</div>
+								
+				<div class="footerText">
+					<p>Zdravka Čelara 16</p>
+					
+				</div>
+			</div>
+							
+			<div class="footerInfo">
+				<div class="footerIcon">
+					<i class="fa fa-envelope"> </i>
+				</div>
+				<div class="footerText">
+					<p>bogdan.nisic.132.19@ict.edu.rs</p>
+				</div>
+			</div>
+							
+			<div class="footerInfo">
+							
+				<div class="footerIcon">
+					<i class="fa fa-phone"> </i>
+				</div>
+				<div class="footerText">
+					<p>+381 69 2233 012</p>
+				</div>
+								
+			</div>
+		  </div>
+          
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>

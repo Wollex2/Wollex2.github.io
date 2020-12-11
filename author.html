@@ -1,0 +1,258 @@
+<!Doctype html>
+<html lang="sr"
+<html>
+
+  <head>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Font Awesome kit-->
+    <script src="https://kit.fontawesome.com/068a24a12e.js" crossorigin="anonymous"></script>
+    <!-- Required meta tags-->
+    <title> Dota 2 store </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Cute Dota 2 merch" />
+    <meta name="description" content="All about Dota 2 merch, info, pictures, prices.  "  />
+    <meta name="author" content="Bogdan Nisic"  />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!--Navigation-->
+      <div id="navigation">
+          <div id="logo" >
+            <a href="index.html"> <img src="images/dota_logo_cut.jpg" alt="Main logo" class="img-responsive" /> </a>
+          </div>
+          <div id="menu">
+            <ul>
+              <li> <a href="index.html">Home </a> </li>
+              <li class="dropdown-store">
+                 <a href="index.html" class="storebtn">
+                   Store
+                   <i class="fas fa-caret-down"></i>
+                 </a>
+                 <div class="dropdown-storePages">
+                   <a href="apparel.html">Apparel</a>
+                   <a href="vynils+collectibles.html">Vynils+Collectibles</a>
+                   <a href="home+office.html">Home+Office</a>
+                 </div>
+
+              </li>
+              <li> <a href="index.html#aboutUs">About us </a> </li>
+              <li> <a href="index.html#contact">Contact </a> </li>
+              <li> <a href="author.html">Author </a> </li>
+            </ul>
+          </div>
+      </div>
+
+      <div id="author">
+        <div class="position">
+          <h1>Author</h1>
+          <div class="authorImg">
+            <img src="images/author_1.jpg" alt="Author's personal picture"/>
+          </div>
+          <div class="authorText">
+            <p>
+              Moje ime je Bogdan Nisić<br> Živim u Beogradu, gde sam završio osvnovnu i srednju školu.<br> Trenutno studiram Internet Tehnologije iz čistog interesa i pasije prema IT svetu. <br>Index: 132-19
+
+
+
+            </p>
+          </div>
+          <div class="cleaner">
+
+          </div>
+        </div>
+      </div>
+	  <div id="documentation" class="position">
+		<h2>Documentation</h2>
+		<h3>Introduction</h3>
+		<p>This website consists of  Home page, Store, About Us, Contact and Author. </p>
+		<p>The web store is resonsible for the following screen widths:  1698px, 1628px, 1598px, 1568px, 1498px, 1398px, 1298px, 1198px, 1098px, 998px, 898px, 798px, 788px, 770px, 700px, 617px, 578px. </p>
+		<p>Pictures from the website, header, footer, paddings and margins, as well as the text are apparently adjusted.</p>
+		<p>Here is the code sample:</p>
+		<h4>Code Sample for 1899 max-width</h4>
+		<i>
+			@media (max-width: 1899px) {
+
+			.productimages {
+			margin-bottom:17px;
+			width: 40%;
+			}
+			.productimages img{
+			padding-left: 100px;
+			}
+			}
+		</i>
+		<h4>Code Sample for 1798 max-width</h4>
+		<i>
+			@media only screen and (max-width:1798px) {
+			.productimages img{
+			padding-left: 85px;
+			}
+			#footerNav {
+			display:none;
+			margin-right:0px;
+			}
+			}
+		</i>
+		<h3>CSS</h3>
+		<p>CSS is precisely created so it can provide extraordinary user experience. The product pictures are aligned and listed one after another. When user puts a computer mouse on the picture it is hovered and the product name and price is shown. There are New arrivals and also products that are on sale. For the products on sale, discounted prices are visible.</p>
+		<p>The following code is from the css project file, it shows how the previously described effects are achieved.</p>
+		<i>.products {
+			  margin-bottom: 60px;
+			}
+			.products h1 {
+			  text-decoration: none;
+			  padding-bottom: 25px;
+			}
+
+			.productimages {
+			  display: inline-block;
+			  margin-right: 17px;
+			  background-color: #ddd;
+			}
+			.productrows {
+			  margin-bottom: 10px;
+			}
+			.cleaner {
+			  clear:both;
+			}
+			.strikethrough {
+			  text-decoration: line-through;
+			  font-weight: 100;
+			}
+			.discountPrice {
+			  font-size: 22px;
+			  font-weight: 500;
+			}				
+		</i>
+		<h3>Javascript</h3>
+		<p>It is crucial to emphasize that the main page has picture carousel. This advanced JavaScript function gives user friendly touch to the website. </p>
+		<p>The code for the mentioned function is presented in the next documentation part.</p>
+		<i>
+			
+			  var myIndex = 0;
+			  carousel();
+			  function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				  x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}
+				x[myIndex-1].style.display = "block";
+				setTimeout(carousel, 6000); // Change image every 6 seconds
+			  }
+			
+		</i>
+		<h3>Navigation</h3>
+		<p>Navigation menu is connecting all pages and it is enriched with dropdown menues. </p>
+
+		<h3>JQueri</h3>
+		<p>Crucial part of the website technologies is jQuery. JQuery Ajax is available on the main page of the store and email validation is used for the contact form. JQuery Ajax enables the function for showing more text, it a user wants to see. On the other hand for email validation on the contact form is used pattern (that should be fulfilled). The pattern is "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$". This means that the email should have text@text.text</p>
+		<h3>RSS</h3>
+		<p>Last but not least is RSS functionality, well-developed footer and linked navigation menu with wanted part of the main page.</p>
+		<h2>Enjoy the Dota 2 Store!<h2>
+	  </div>
+
+
+
+
+      <!-- Footer -->
+      <div id="footer">
+        <div class="position">
+          <div id="footerNav" class="footerPosition">
+            <h2>
+              Navigate
+            </h2>
+            <div id="footerNavbuttons">
+              <ul>
+                <li> <a href="index.html">Home </a> </li>
+                <li> <a href="#menu">Store </a> </li>
+                <li> <a href="index.html#aboutUs">About us </a> </li>
+                <li> <a href="index.html#contact">Contact </a> </li>
+                <li> <a href="author.html">Author </a> </li>
+              </ul>
+            </div>
+          </div>
+		  <div id="footerConnect" class="footerPosition">
+			<h2> Connect </h2>
+			<div id="footerConnectIcons" >
+				<div id="instagramIcon">
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+				</div>
+				
+				<div id="facebookIcon">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+				</div>
+				
+				<div id="youtubeIcon">
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+				</div>
+				
+				<div id="rssIcon">
+					<a href="http://feeds.bbci.co.uk/news/world/rss.xml"><i class="fas fa-rss-square"></i></a>
+				</div>
+			</div>
+		  
+		  </div>
+		  <div id="footerAboutUs" class="footerPosition">
+			<img src="images/footer_logo_1.png"/>
+			<p>We are passionate developers and creators of Dota 2. As the universe of Dota 2 grows,
+              we want to give something back to the community and give you opportunity to purchase clothes
+              with your favorite heroes, their favorite figurines and more!</p>
+		  </div>
+		  <div id="footerContact" class="footerPosition">
+		  <h2>Kontakt</h2>
+			<div class="footerInfo">
+				<div class="footerIcon">
+					<i class="fas fa-home"></i>
+				</div>
+								
+				<div class="footerText">
+					<p>Zdravka Čelara 16</p>
+					
+				</div>
+			</div>
+							
+			<div class="footerInfo">
+				<div class="footerIcon">
+					<i class="fa fa-envelope"> </i>
+				</div>
+				<div class="footerText">
+					<p>bogdan.nisic.132.19@ict.edu.rs</p>
+				</div>
+			</div>
+							
+			<div class="footerInfo">
+							
+				<div class="footerIcon">
+					<i class="fa fa-phone"> </i>
+				</div>
+				<div class="footerText">
+					<p>+381 69 2233 012</p>
+				</div>
+								
+			</div>
+		  </div>
+          
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>
